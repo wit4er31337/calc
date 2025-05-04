@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: grey;
+  width: 46rem;
+  height: 39rem;
+  border-radius: 0.5rem;
+}
+
+.input {
+  display: flex;
+  background-color: rgb(170, 170, 170);
+  align-items: center;
+  margin: 0.8rem;
+  margin-bottom: 0.5rem;
+  height: 6rem;
+  width: 44.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 5rem;
+  text-align: right;
+  resize: none;
+  overflow: hidden;
+}
+
+.number_block button {
+  height: 6rem;
+  width: 11rem;
+  font-size: 3rem;
+  border-radius: 0.3rem;
+  border: none;
+  cursor: pointer;
+}
+
+.operations {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  color: white;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.row .op:not(.dot):not(.res) {
+  background-color: rgb(68, 66, 66);
+  color: white;
+  font-size: 3rem;
+}
+
+.op.dot {
+  font-size: 4.5rem;
+  padding-bottom: 3rem;
+}
+
+.op.res {
+  background-color: rgb(39, 144, 185);
+}
+
+.row button:hover {
+  opacity: 0.9;
+}
+.row button:active {
+  transform: scale(0.98);
+}
+.row .op.res:hover {
+  opacity: 0.7;
+}
+.row .op.res:active {
+  transform: scale(0.96);
+}
